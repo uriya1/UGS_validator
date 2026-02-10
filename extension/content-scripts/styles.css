@@ -1,0 +1,48 @@
+/* Additional styles for UGS Validator integration */
+
+.ugs-validator-enhanced {
+  position: relative;
+}
+
+.ugs-validator-enhanced input,
+.ugs-validator-enhanced textarea {
+  transition: border-color 0.2s ease;
+}
+
+.ugs-validator-enhanced input:focus,
+.ugs-validator-enhanced textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 78, 33, 0.2);
+}
+
+/* Make sure validation indicators are visible */
+.ugs-validator-inline-error,
+.ugs-validator-inline-warning {
+  position: absolute !important;
+  z-index: 999999 !important;
+  pointer-events: none;
+}
+
+/* Highlight for detected JEXL field */
+.ugs-validator-highlight {
+  outline: 4px solid #0073e6 !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px rgba(0, 115, 230, 0.2) !important;
+  transition: outline 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* Pulse animation for highlighting */
+@keyframes ugs-validator-pulse {
+  0%, 100% {
+    outline-color: #0073e6;
+    box-shadow: 0 0 0 4px rgba(0, 115, 230, 0.2);
+  }
+  50% {
+    outline-color: #0056b3;
+    box-shadow: 0 0 0 6px rgba(0, 115, 230, 0.4);
+  }
+}
+
+.ugs-validator-highlight.pulse {
+  animation: ugs-validator-pulse 2s ease-in-out infinite;
+}

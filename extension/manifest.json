@@ -1,0 +1,87 @@
+{
+    "manifest_version": 3,
+    "name": "UGS Validator",
+    "version": "1.0.0",
+    "description": "Real-time JEXL validation for Unity Gaming Services configurations",
+  
+    "permissions": [
+      "activeTab",
+      "storage",
+      "tabs"
+    ],
+  
+    "host_permissions": [
+      "https://*.unity.com/*",
+      "https://unity.com/*",
+      "https://*.unity3d.com/*",
+      "https://unity3d.com/*",
+      "https://*.cloud.unity.com/*",
+      "https://cloud.unity.com/*",
+      "https://generativelanguage.googleapis.com/*"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": [
+         "https://*.unity.com/*",
+         "https://unity.com/*",
+         "https://*.unity3d.com/*",
+         "https://unity3d.com/*",
+         "https://*.cloud.unity.com/*",
+         "https://cloud.unity.com/*"
+        ],
+        "js": [
+          "utils/ugs-parameters.js",
+          "utils/parameter-loader.js",
+          "utils/jexl-validator.js",
+          "content-scripts/injector.js"
+        ],
+        "css": [
+          "content-scripts/styles.css"
+        ],
+        "run_at": "document_idle"
+      }
+    ],
+  
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "content-scripts/panel.html",
+          "content-scripts/panel.js",
+          "assets/logo.png",
+          "assets/logo-gray.png",
+          "assets/ai_icon.svg"
+        ],
+        "matches": [
+         "https://*.unity.com/*",
+         "https://unity.com/*",
+         "https://*.unity3d.com/*",
+         "https://unity3d.com/*",
+         "https://*.cloud.unity.com/*",
+         "https://cloud.unity.com/*"
+        ]
+      }
+    ],
+  
+    "background": {
+      "service_worker": "background/service-worker.js"
+    },
+  
+    "action": {
+      "default_title": "UGS Validator - Click to open validation panel",
+      "default_icon": {
+        "16": "assets/logo-gray.png",
+        "32": "assets/logo-gray.png",
+        "48": "assets/logo-gray.png",
+        "128": "assets/logo-gray.png"
+      }
+    },
+  
+    "icons": {
+      "16": "assets/logo.png",
+      "32": "assets/logo.png",
+      "48": "assets/logo.png",
+      "128": "assets/logo.png"
+    }
+  }
+  
