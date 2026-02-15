@@ -1140,12 +1140,12 @@
             <!-- Button Row -->
             <div style="display: flex; gap: 12px; margin-top: 16px;">
               <!-- Validation Button (Secondary) -->
-              <button id="ugs-validate-btn" style="flex: 1; padding: 12px 20px; background: #ffffff; color: #9ca3af; border: 2px solid #9ca3af; border-radius: 50px; cursor: not-allowed; font-size: 14px; font-weight: 400; transition: all 0.2s; opacity: 0.5; display: flex; align-items: center; justify-content: center; gap: 8px;" disabled>
+              <button id="ugs-validate-btn" style="flex: 1; padding: 12px 20px; background: #F0F0F0; color: #BFBFBF; border: 1px solid #D9D9D9; border-radius: 50px; cursor: not-allowed; font-size: 14px; font-weight: 400; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px;" disabled>
                 <span>Validate</span>
               </button>
               
               <!-- AI Generate Button (Primary) - on the right -->
-              <button id="ugs-convert-btn" style="flex: 1; padding: 12px 20px; background: #ffffff; color: #000000; border: 2px solid #000000; border-radius: 50px; cursor: pointer; font-size: 14px; font-weight: 400; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; position: relative; overflow: hidden;" onmouseover="if(!this.disabled) { this.style.background='#000000'; this.style.color='white'; this.style.borderColor='#000000'; this.style.borderWidth='2px'; this.style.transform='translateY(-2px)'; const icon = this.querySelector('#ugs-ai-star'); if(icon) icon.style.filter='brightness(0) saturate(100%) invert(100%)'; } else { this.style.cursor='not-allowed'; }" onmouseout="if(!this.disabled) { this.style.background='#ffffff'; this.style.color='#000000'; this.style.borderColor='#000000'; this.style.borderWidth='2px'; this.style.transform='translateY(0)'; const icon = this.querySelector('#ugs-ai-star'); if(icon) icon.style.filter='brightness(0) saturate(100%)'; } else { this.style.cursor='not-allowed'; }">
+              <button id="ugs-convert-btn" style="flex: 1; padding: 12px 20px; background: #ffffff; color: #000000; border: 1px solid #000000; border-radius: 50px; cursor: pointer; font-size: 14px; font-weight: 400; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; position: relative; overflow: hidden;" onmouseover="if(!this.disabled) { this.style.background='#000000'; this.style.color='white'; this.style.borderColor='#000000'; this.style.borderWidth='1px'; this.style.transform='translateY(-2px)'; const icon = this.querySelector('#ugs-ai-star'); if(icon) icon.style.filter='brightness(0) saturate(100%) invert(100%)'; } else { this.style.cursor='not-allowed'; }" onmouseout="if(!this.disabled) { this.style.background='#ffffff'; this.style.color='#000000'; this.style.borderColor='#000000'; this.style.borderWidth='1px'; this.style.transform='translateY(0)'; const icon = this.querySelector('#ugs-ai-star'); if(icon) icon.style.filter='brightness(0) saturate(100%)'; } else { this.style.cursor='not-allowed'; }">
                 <img id="ugs-ai-star" src="${aiIconUrl}" alt="AI" style="width: 16px; height: 16px; flex-shrink: 0; transition: transform 0.2s; filter: brightness(0) saturate(100%);">
                 <span>AI Generate</span>
               </button>
@@ -1186,7 +1186,7 @@
                     </svg>
                   </button>
                 </div>
-                <button id="ugs-save-config-btn" style="width: 100%; padding: 10px; margin-top: 12px; background: #ffffff; color: #FF4E21; border: 2px solid #9ca3af; border-radius: 50px; cursor: not-allowed; font-size: 13px; font-weight: 400; transition: all 0.2s; box-sizing: border-box; opacity: 0.5;" disabled onmouseover="if(!this.disabled) { this.style.background='#FF4E21'; this.style.color='white'; this.style.borderColor='#FF4E21'; this.style.transform='translateY(-2px)'; } else { this.style.cursor='not-allowed'; }" onmouseout="if(!this.disabled) { this.style.background='#ffffff'; this.style.color='#FF4E21'; this.style.borderColor='#FF4E21'; this.style.transform='translateY(0)'; } else { this.style.cursor='not-allowed'; }">Save Config</button>
+                <button id="ugs-save-config-btn" style="width: 100%; padding: 10px; margin-top: 12px; background: #F0F0F0; color: #BFBFBF; border: 1px solid #D9D9D9; border-radius: 50px; cursor: not-allowed; font-size: 13px; font-weight: 400; transition: all 0.2s; box-sizing: border-box;" disabled>Save Config</button>
                 <div id="ugs-config-status" style="margin-top: 12px; padding: 12px; border-radius: 8px; font-size: 12px; display: none;"></div>
               </div>
             </details>
@@ -1194,7 +1194,7 @@
           
           <!-- Inject Button -->
           <div style="margin-top: 20px;">
-            <button id="ugs-inject-btn" style="width: 100%; padding: 14px 20px; background: #ffffff; color: #1a1a1a; border: 2px solid #9ca3af; border-radius: 50px; cursor: not-allowed; font-size: 15px; font-weight: 400; transition: all 0.2s; opacity: 0.5;" disabled onmouseover="if(!this.disabled) { this.style.background='#FF4E21'; this.style.color='white'; this.style.borderColor='#FF4E21'; this.style.transform='translateY(-2px)'; } else { this.style.cursor='not-allowed'; }" onmouseout="if(!this.disabled) { this.style.background='#FF4E21'; this.style.color='white'; this.style.borderColor='#FF4E21'; this.style.transform='translateY(0)'; } else { this.style.cursor='not-allowed'; }">Inject into JEXL Condition Field</button>
+            <button id="ugs-inject-btn" style="width: 100%; padding: 14px 20px; background: #F0F0F0; color: #BFBFBF; border: 1px solid #D9D9D9; border-radius: 50px; cursor: not-allowed; font-size: 15px; font-weight: 400; transition: all 0.2s;" disabled>Inject into JEXL Condition Field</button>
             <div id="ugs-inject-result" style="margin-top: 12px; padding: 12px; border-radius: 12px; font-size: 12px; display: none;"></div>
           </div>
           </div>
@@ -1203,7 +1203,17 @@
           <div id="ugs-tab-content-content" class="ugs-tab-content" style="display: none;">
             <!-- Main Section: Free Text Input with AI Generate for JSON Config -->
             <div style="background: rgba(255,255,255,0.9); border-radius: 16px; padding: 20px; margin-bottom: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); backdrop-filter: blur(10px);">
-              <h3 style="font-size: 15px; font-weight: 600; color: #111827; margin: 0 0 12px 0;">Generate JSON Config</h3>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <h3 style="font-size: 15px; font-weight: 600; color: #111827; margin: 0;">Generate JSON Config</h3>
+                <button id="ugs-content-refresh-btn" style="width: 28px; height: 28px; background: rgba(255,255,255,0.9); border: 1px solid #e5e7eb; border-radius: 6px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; padding: 0;" onmouseover="this.style.background='#f3f4f6'; this.style.borderColor='#FF4E21';" onmouseout="this.style.background='rgba(255,255,255,0.9)'; this.style.borderColor='#e5e7eb';" title="Clear all and start fresh">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #6b7280;">
+                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
+                    <path d="M21 3v5h-5"></path>
+                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
+                    <path d="M8 16H3v5"></path>
+                  </svg>
+                </button>
+              </div>
               <div style="position: relative;">
                 <textarea id="ugs-content-req" style="width: 100%; min-height: 120px; padding: 16px; padding-right: 40px; border: 2px solid #e5e7eb; border-radius: 12px; font-size: 14px; resize: vertical; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; box-sizing: border-box; background: rgba(255,255,255,0.9); transition: border-color 0.2s;" placeholder="Enter your content requirement (e.g., 'disable extra hole feature' or 'enable extra hole with price 200')..." onfocus="this.style.borderColor='#FF4E21'; this.style.outline='none';" onblur="this.style.borderColor='#e5e7eb';"></textarea>
                 <button class="ugs-copy-btn" data-target="ugs-content-req" style="position: absolute; top: 12px; right: 12px; width: 24px; height: 24px; background: rgba(255,255,255,0.9); border: 1px solid #e5e7eb; border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s; z-index: 10;" onmouseover="this.style.background='#f3f4f6'; this.style.borderColor='#9ca3af';" onmouseout="this.style.background='rgba(255,255,255,0.9)'; this.style.borderColor='#e5e7eb';" title="Copy to clipboard">
@@ -1240,7 +1250,7 @@
               
               <!-- AI Generate Button for Content -->
               <div style="display: flex; gap: 12px; margin-top: 16px;">
-                <button id="ugs-content-convert-btn" style="flex: 1; padding: 12px 20px; background: #ffffff; color: #000000; border: 2px solid #000000; border-radius: 50px; cursor: pointer; font-size: 14px; font-weight: 400; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; position: relative; overflow: hidden;" onmouseover="if(!this.disabled) { this.style.background='#000000'; this.style.color='white'; this.style.borderColor='#000000'; this.style.borderWidth='2px'; this.style.transform='translateY(-2px)'; const icon = this.querySelector('#ugs-content-ai-star'); if(icon) icon.style.filter='brightness(0) saturate(100%) invert(100%)'; } else { this.style.cursor='not-allowed'; }" onmouseout="if(!this.disabled) { this.style.background='#ffffff'; this.style.color='#000000'; this.style.borderColor='#000000'; this.style.borderWidth='2px'; this.style.transform='translateY(0)'; const icon = this.querySelector('#ugs-content-ai-star'); if(icon) icon.style.filter='brightness(0) saturate(100%)'; } else { this.style.cursor='not-allowed'; }">
+                <button id="ugs-content-convert-btn" style="flex: 1; padding: 12px 20px; background: #ffffff; color: #000000; border: 1px solid #000000; border-radius: 50px; cursor: pointer; font-size: 14px; font-weight: 400; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; position: relative; overflow: hidden;" onmouseover="if(!this.disabled) { this.style.background='#000000'; this.style.color='white'; this.style.borderColor='#000000'; this.style.borderWidth='1px'; this.style.transform='translateY(-2px)'; const icon = this.querySelector('#ugs-content-ai-star'); if(icon) icon.style.filter='brightness(0) saturate(100%) invert(100%)'; } else { this.style.cursor='not-allowed'; }" onmouseout="if(!this.disabled) { this.style.background='#ffffff'; this.style.color='#000000'; this.style.borderColor='#000000'; this.style.borderWidth='1px'; this.style.transform='translateY(0)'; const icon = this.querySelector('#ugs-content-ai-star'); if(icon) icon.style.filter='brightness(0) saturate(100%)'; } else { this.style.cursor='not-allowed'; }">
                   <img id="ugs-content-ai-star" src="${aiIconUrl}" alt="AI" style="width: 16px; height: 16px; flex-shrink: 0; transition: transform 0.2s; filter: brightness(0) saturate(100%);">
                   <span>AI Generate</span>
                 </button>
@@ -1308,26 +1318,34 @@
     }
     
     // Auto-detect which tab to show based on UGS page state
+    // Auto-switch when Content or Targeting header is detected
     function detectActiveTab() {
-      // Look for the H2 element with text "Content" in the UGS page
-      // This indicates we're in the Content view
-      const contentH2 = Array.from(document.querySelectorAll('h2.MuiTypography-h2, h2')).find(h2 => {
+      // Look for the H2 element with text "Content" or "Targeting" in the UGS page
+      const allH2 = Array.from(document.querySelectorAll('h2.MuiTypography-h2, h2'));
+      const contentH2 = allH2.find(h2 => {
         const text = h2.textContent.trim();
         return text === 'Content';
+      });
+      const targetingH2 = allH2.find(h2 => {
+        const text = h2.textContent.trim();
+        return text === 'Targeting';
       });
       
       // Also check for the specific div structure
       const contentDiv = document.querySelector('div[data-testid="stepper-title"] h2');
       const isContentView = contentH2 !== undefined || 
                           (contentDiv && contentDiv.textContent.trim() === 'Content');
+      const isTargetingView = targetingH2 !== undefined || 
+                            (contentDiv && contentDiv.textContent.trim() === 'Targeting');
       
       if (isContentView) {
         console.log('UGS Validator: Detected Content view, switching to Content tab');
         switchToContentTab();
-      } else {
+      } else if (isTargetingView) {
         console.log('UGS Validator: Detected Targeting view, switching to Targeting tab');
-        switchToTargetingTab(); // Default to targeting
+        switchToTargetingTab();
       }
+      // If neither is detected, let the user keep their current tab selection
     }
     
     function switchToTargetingTab() {
@@ -1449,6 +1467,30 @@
     const validateBtn = sidePanel.querySelector('#ugs-validate-btn');
     const geminiApiKeyInput = sidePanel.querySelector('#ugs-gemini-api-key');
     
+    // Function to update copy button visibility based on content
+    function updateCopyButtonVisibility() {
+      const copyButtons = sidePanel.querySelectorAll('.ugs-copy-btn');
+      copyButtons.forEach(btn => {
+        const targetId = btn.getAttribute('data-target');
+        const targetElement = sidePanel.querySelector(`#${targetId}`);
+        if (targetElement) {
+          const hasContent = (targetElement.value || targetElement.textContent || '').trim().length > 0;
+          btn.style.display = hasContent ? 'flex' : 'none';
+        }
+      });
+    }
+    
+    // Function to update refresh button visibility (only show when AI output exists)
+    function updateRefreshButtonVisibility() {
+      const contentRefreshBtn = sidePanel.querySelector('#ugs-content-refresh-btn');
+      if (contentRefreshBtn) {
+        const hasAiOutput = contentAiOutput && contentAiOutput.value.trim().length > 0;
+        const hasConfigKey = contentConfigKey && contentConfigKey.value.trim().length > 0;
+        // Show refresh button only if AI output or config key exists (something was generated)
+        contentRefreshBtn.style.display = (hasAiOutput || hasConfigKey) ? 'flex' : 'none';
+      }
+    }
+    
     // Add copy button functionality for all copy buttons
     const copyButtons = sidePanel.querySelectorAll('.ugs-copy-btn');
     copyButtons.forEach(btn => {
@@ -1490,6 +1532,9 @@
       });
     });
     
+    // Initially hide all copy buttons (will show when content exists)
+    updateCopyButtonVisibility();
+    
     // Track if AI is currently generating
     let isAIGenerating = false;
     
@@ -1522,6 +1567,7 @@
     geminiApiKeyInput.addEventListener('input', () => {
       const apiKey = geminiApiKeyInput.value.trim();
       updateButtonStates();
+      updateCopyButtonVisibility();
       if (apiKey) {
         chrome.storage.local.set({ ugs_gemini_api_key: apiKey }, () => {
           console.log('UGS Validator: Gemini API key saved');
@@ -1650,17 +1696,41 @@
       const hasConfig = remoteConfigInput.value.trim().length > 0;
       saveConfigBtn.disabled = !hasConfig;
       if (hasConfig) {
-        saveConfigBtn.style.background = '#ffffff';
-        saveConfigBtn.style.color = '#FF4E21';
-        saveConfigBtn.style.borderColor = '#FF4E21';
-        saveConfigBtn.style.opacity = '1';
+        saveConfigBtn.style.background = '#FFF';
+        saveConfigBtn.style.color = '#40444E';
+        saveConfigBtn.style.borderColor = '#D9D9D9';
+        saveConfigBtn.style.borderWidth = '1px';
         saveConfigBtn.style.cursor = 'pointer';
+        // Add hover handlers when enabled
+        saveConfigBtn.onmouseover = function() {
+          if(!this.disabled) {
+            this.style.background = '#F0F0F0';
+            this.style.color = '#40444E';
+            this.style.borderColor = '#D9D9D9';
+            this.style.borderRadius = '50px';
+          } else {
+            this.style.cursor = 'not-allowed';
+          }
+        };
+        saveConfigBtn.onmouseout = function() {
+          if(!this.disabled) {
+            this.style.background = '#FFF';
+            this.style.color = '#40444E';
+            this.style.borderColor = '#D9D9D9';
+            this.style.borderRadius = '50px';
+          } else {
+            this.style.cursor = 'not-allowed';
+          }
+        };
       } else {
-        saveConfigBtn.style.background = '#ffffff';
-        saveConfigBtn.style.color = '#9ca3af';
-        saveConfigBtn.style.borderColor = '#9ca3af';
-        saveConfigBtn.style.opacity = '0.5';
+        saveConfigBtn.style.background = '#F0F0F0';
+        saveConfigBtn.style.color = '#BFBFBF';
+        saveConfigBtn.style.borderColor = '#D9D9D9';
+        saveConfigBtn.style.borderWidth = '1px';
         saveConfigBtn.style.cursor = 'not-allowed';
+        // Remove hover handlers when disabled
+        saveConfigBtn.onmouseover = null;
+        saveConfigBtn.onmouseout = null;
       }
     }
     
@@ -1670,6 +1740,7 @@
     // Parse remote config on input
     remoteConfigInput.addEventListener('input', () => {
       updateSaveConfigButton();
+      updateCopyButtonVisibility(); // Update copy button visibility
       const configText = remoteConfigInput.value.trim();
       if (!configText) {
         configStatus.style.display = 'none';
@@ -2007,6 +2078,7 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
         aiOutput.value = jexl;
         aiOutput.style.height = 'auto';
         aiOutput.style.height = Math.min(aiOutput.scrollHeight, 300) + 'px';
+        updateCopyButtonVisibility(); // Update copy button visibility
         
         // Validate the AI output
         validateJEXLInPanel(jexl);
@@ -2027,6 +2099,7 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
           aiOutput.value = fallbackJexl;
           aiOutput.style.height = 'auto';
           aiOutput.style.height = Math.min(aiOutput.scrollHeight, 300) + 'px';
+          updateCopyButtonVisibility(); // Update copy button visibility
           
           // Don't call updateButtonStates here - wait until finally block
           validateJEXLInPanel(fallbackJexl);
@@ -2057,6 +2130,7 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
             this.style.background = '#000000';
             this.style.color = 'white';
             this.style.borderColor = '#000000';
+            this.style.borderWidth = '1px';
             this.style.transform = 'translateY(-2px)';
             const icon = this.querySelector('#ugs-ai-star');
             if (icon) icon.style.filter = 'brightness(0) saturate(100%) invert(100%)'; // White icon on black background
@@ -2069,6 +2143,7 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
             this.style.background = '#ffffff';
             this.style.color = '#000000';
             this.style.borderColor = '#000000';
+            this.style.borderWidth = '1px';
             this.style.transform = 'translateY(0)';
             const icon = this.querySelector('#ugs-ai-star');
             if (icon) icon.style.filter = 'brightness(0) saturate(100%)'; // Black icon on white background
@@ -2091,10 +2166,10 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
       // Update Validate button - keep disabled if AI is generating
       if (isAIGenerating) {
         validateBtn.disabled = true;
-        validateBtn.style.setProperty('background', '#ffffff', 'important');
-        validateBtn.style.setProperty('color', '#9ca3af', 'important');
-        validateBtn.style.setProperty('border-color', '#9ca3af', 'important');
-        validateBtn.style.setProperty('opacity', '0.5', 'important');
+        validateBtn.style.setProperty('background', '#F0F0F0', 'important');
+        validateBtn.style.setProperty('color', '#BFBFBF', 'important');
+        validateBtn.style.setProperty('border-color', '#D9D9D9', 'important');
+        validateBtn.style.setProperty('border-width', '1px', 'important');
         validateBtn.style.setProperty('cursor', 'not-allowed', 'important');
         // Remove hover handlers when disabled
         validateBtn.onmouseover = null;
@@ -2104,37 +2179,37 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
         const hasAnyInput = hasInput || hasAiOutput;
         validateBtn.disabled = !hasAnyInput;
         if (hasAnyInput) {
-          validateBtn.style.setProperty('background', '#ffffff', 'important');
-          validateBtn.style.setProperty('color', '#FF4E21', 'important');
-          validateBtn.style.setProperty('border-color', '#FF4E21', 'important');
-          validateBtn.style.setProperty('opacity', '1', 'important');
+          validateBtn.style.setProperty('background', '#FFF', 'important');
+          validateBtn.style.setProperty('color', '#40444E', 'important');
+          validateBtn.style.setProperty('border-color', '#D9D9D9', 'important');
+          validateBtn.style.setProperty('border-width', '1px', 'important');
           validateBtn.style.setProperty('cursor', 'pointer', 'important');
           // Add hover handlers when enabled
           validateBtn.onmouseover = function() {
             if(!this.disabled) {
-              this.style.setProperty('background', '#FF4E21', 'important');
-              this.style.setProperty('color', 'white', 'important');
-              this.style.setProperty('border-color', '#FF4E21', 'important');
-              this.style.setProperty('transform', 'translateY(-2px)', 'important');
+              this.style.setProperty('background', '#F0F0F0', 'important');
+              this.style.setProperty('color', '#40444E', 'important');
+              this.style.setProperty('border-color', '#D9D9D9', 'important');
+              this.style.setProperty('border-radius', '50px', 'important');
             } else {
               this.style.setProperty('cursor', 'not-allowed', 'important');
             }
           };
           validateBtn.onmouseout = function() {
             if(!this.disabled) {
-              this.style.setProperty('background', '#ffffff', 'important');
-              this.style.setProperty('color', '#FF4E21', 'important');
-              this.style.setProperty('border-color', '#FF4E21', 'important');
-              this.style.setProperty('transform', 'translateY(0)', 'important');
+              this.style.setProperty('background', '#FFF', 'important');
+              this.style.setProperty('color', '#40444E', 'important');
+              this.style.setProperty('border-color', '#D9D9D9', 'important');
+              this.style.setProperty('border-radius', '50px', 'important');
             } else {
               this.style.setProperty('cursor', 'not-allowed', 'important');
             }
           };
         } else {
-          validateBtn.style.setProperty('background', '#ffffff', 'important');
-          validateBtn.style.setProperty('color', '#9ca3af', 'important');
-          validateBtn.style.setProperty('border-color', '#9ca3af', 'important');
-          validateBtn.style.setProperty('opacity', '0.5', 'important');
+          validateBtn.style.setProperty('background', '#F0F0F0', 'important');
+          validateBtn.style.setProperty('color', '#BFBFBF', 'important');
+          validateBtn.style.setProperty('border-color', '#D9D9D9', 'important');
+          validateBtn.style.setProperty('border-width', '1px', 'important');
           validateBtn.style.setProperty('cursor', 'not-allowed', 'important');
           // Remove hover handlers when disabled
           validateBtn.onmouseover = null;
@@ -2152,7 +2227,7 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
         convertBtn.style.background = '#ffffff';
         convertBtn.style.color = '#000000';
         convertBtn.style.borderColor = '#000000';
-        convertBtn.style.borderWidth = '2px';
+        convertBtn.style.borderWidth = '1px';
         if (icon) icon.style.filter = 'brightness(0) saturate(100%)'; // Black icon to match black text
       } else {
         convertBtn.style.opacity = '0.5';
@@ -2160,25 +2235,49 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
         convertBtn.style.background = '#ffffff';
         convertBtn.style.color = '#9ca3af';
         convertBtn.style.borderColor = '#9ca3af';
-        convertBtn.style.borderWidth = '2px';
+        convertBtn.style.borderWidth = '1px';
         if (icon) icon.style.filter = 'brightness(0) saturate(100%) opacity(0.6)'; // Gray icon to match gray text (#9ca3af)
       }
       
       // Update Inject button (only enabled if there's valid JEXL)
       if (currentValidJEXL && currentValidJEXL.trim().length > 0) {
         injectBtn.disabled = false;
-        injectBtn.style.background = '#FF4E21';
-        injectBtn.style.color = 'white';
-        injectBtn.style.borderColor = '#FF4E21';
+        injectBtn.style.background = '#FFF';
+        injectBtn.style.color = '#40444E';
+        injectBtn.style.borderColor = '#D9D9D9';
+        injectBtn.style.borderWidth = '1px';
         injectBtn.style.cursor = 'pointer';
-        injectBtn.style.opacity = '1';
+        // Add hover handlers when enabled
+        injectBtn.onmouseover = function() {
+          if(!this.disabled) {
+            this.style.background = '#F0F0F0';
+            this.style.color = '#40444E';
+            this.style.borderColor = '#D9D9D9';
+            this.style.borderRadius = '50px';
+          } else {
+            this.style.cursor = 'not-allowed';
+          }
+        };
+        injectBtn.onmouseout = function() {
+          if(!this.disabled) {
+            this.style.background = '#FFF';
+            this.style.color = '#40444E';
+            this.style.borderColor = '#D9D9D9';
+            this.style.borderRadius = '50px';
+          } else {
+            this.style.cursor = 'not-allowed';
+          }
+        };
       } else {
         injectBtn.disabled = true;
-        injectBtn.style.background = '#ffffff';
-        injectBtn.style.color = '#1a1a1a';
-        injectBtn.style.borderColor = '#9ca3af';
+        injectBtn.style.background = '#F0F0F0';
+        injectBtn.style.color = '#BFBFBF';
+        injectBtn.style.borderColor = '#D9D9D9';
+        injectBtn.style.borderWidth = '1px';
         injectBtn.style.cursor = 'not-allowed';
-        injectBtn.style.opacity = '0.5';
+        // Remove hover handlers when disabled
+        injectBtn.onmouseover = null;
+        injectBtn.onmouseout = null;
       }
       
       // Update Content tab AI Generate button (disabled if no API key OR no input OR currently generating)
@@ -2201,7 +2300,7 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
             contentConvertBtn.style.background = '#ffffff';
             contentConvertBtn.style.color = '#000000';
             contentConvertBtn.style.borderColor = '#000000';
-            contentConvertBtn.style.borderWidth = '2px';
+            contentConvertBtn.style.borderWidth = '1px';
             const icon = contentConvertBtn.querySelector('#ugs-content-ai-star');
             if (icon) icon.style.filter = 'brightness(0) saturate(100%)'; // Black icon to match black text
           } else {
@@ -2210,7 +2309,7 @@ Return ONLY the JEXL expression, nothing else. No explanations, no markdown, jus
             contentConvertBtn.style.background = '#ffffff';
             contentConvertBtn.style.color = '#9ca3af';
             contentConvertBtn.style.borderColor = '#9ca3af';
-            contentConvertBtn.style.borderWidth = '2px';
+            contentConvertBtn.style.borderWidth = '1px';
             const icon = contentConvertBtn.querySelector('#ugs-content-ai-star');
             if (icon) icon.style.filter = 'brightness(0) saturate(100%) opacity(0.6)'; // Gray icon to match gray text (#9ca3af)
           }
@@ -2295,13 +2394,52 @@ Available Features:
      - {"boxesSaleConfig": {"enabled": false, "startDate": "2025-08-03", "endDate": "2025-08-31", "eventStartTime": "06:00", "eventEndTime": "22:00", "timerDuration": "01:00", "priceConfiguration": {"oldPrice": 400, "newPrice": 300, "discountValue": 25}, "durationOfPurchasedBoxes": "10:00", "availableClaims": 3, "cooldown": 60, "enableLevel": 4}}
      - {"boxesSaleConfig": {"enabled": true, "startDate": "2025-09-02", "endDate": "2025-09-02", "eventStartTime": "06:00", "eventEndTime": "22:00", "timerDuration": "01:00", "priceConfiguration": {"oldPrice": 400, "newPrice": 300, "discountValue": 25}, "durationOfPurchasedBoxes": "10:00", "availableClaims": 3, "cooldown": 60, "enableLevel": 4}}
 
+Context - Supersonic Wisdom SDK Remote Feature Flags Reference:
+This reference helps you understand the game's feature system and available remote config keys. Use this context to better interpret user requests and generate appropriate configurations.
+
+All keys can be controlled via Wisdom Remote Config, UGS Remote Config, A/B, or Deep Link (priority: Deep Link > A/B > UGS Remote > Wisdom Remote > Local).
+
+Key Categories:
+- Ads strategy (level-based & interstitials): swAdsLevelBasedMinLevel (int), swAdsLevelBasedIsInstlBeforeRv (bool), swAdsLevelBasedBetweenLevelsTimer (string), swAdsLevelBasedPlaytimeTimer (string), swAdsLevelBasedNoTouchBetweenLevelsTimer (string), swAdsLevelBasedNoTouchPlaytimeTimer (string), swAdsLevelBasedBonusPlaytimeTimer (string), swAdsLevelBasedBonusNoTouchPlaytimeTimer (string), swMetaLevelBasedPlaytimeTimer (string), swMetaLevelBasedNoTouchPlaytimeTimer (string), swAdsLevelBasedTotalMinLevelFailure (int, -1 = disabled), swAdsTotalMinSecond (int), swAdsAppOpenBeforeInterstitial (bool), swAdsAppOpenAdEnabled (bool), swAdsAdTimeout (float), swAdsVerboseTracking (bool), swShouldNoTouchTimersCountInBackground (bool), swAdsFreeZoneTimeoutTimeSec (int), swAdsFreeZoneVerboseTracking (bool), swUiTriggerPointsEnabled (bool), swTriggerPointExcludePlacements (string), swAdsMinGameSession (int, -1 = no minimum), swAdsMinActiveDay (int, -1 = no minimum)
+- Time-based ads: swAdsTimeBasedMinSecond (int), swAdsTimeBasedTotalMinSecond (int), swAdsTimeBasedPlaytimeTimer (string), swAdsTimeBasedNoTouchPlaytimeTimer (string), swMetaTimeBasedPlaytimeTimer (string), swMetaTimeBasedNoTouchPlaytimeTimer (string)
+- RV cooldown: swAdsCooldownAfterRvTimer (string, "-1" = no cooldown), swAdsCooldownAfterRvReset (float), swAdsCooldownAfterRvDisableReset (int)
+- App Open & AdMob: swAdsAppOpenMaxLoadRetryAttempts (int)
+- Ad revenue & behavior: swShowISInsteadRV (bool), swRewardedISNonManagedEarlyPreload (bool), swAdsBannersEnabled (bool), swDataEnrichmentEnabled (bool), swAdsRevenueVendorsReport (string), swIapRevenueVendorsReport (string)
+- Ads notifier: adsNotifierEnabled (bool), adsNotificationBackgroundColor (string), adsNotificationTextColor (string), adsNotificationMessageText (string), adsNotificationHeightPosition (int), adsNotificationSideRight (bool), adsNotifierShouldReportEvent (bool), adsNotificationScale (float), adsNotificationGlobalCountdownInterval (float), adsNotificationPlaytimeCountdownInterval (float), adsNotificationNoTouchPlaytimeCountdownInterval (float), adsNotificationNoTouchBetweenLevelsCountdownInterval (float)
+- Promotion/banner X: swBannerXEnabled (bool), swBannerXHorizontalPositon (int), swBannerXHighlightColor (string), swBannerXBackroundColor (string), swBannerXmode (int), swBannerXbundle (string)
+- Initial revenue & events: swInitialRvEvent (bool), swInitialMegaSessionRvEvent (bool)
+- UGS & Cloud Save: swUgsEnableAutomaticRemoteConfigRequests (bool), swUgsRemoteConfigVerboseTracking (bool), swUgsCloudSaveVerboseTracking (bool), swCloudSaveAutoFetchCooldown (int, -1 = disabled), swCloudSaveEnabled (int, 0 = disabled)
+- Install source & app update: swInstallSourcePopupEnabled (bool), swInstallSourcePopupTitle (string), swInstallSourcePopupBody (string), swDownloadSourceBlocklistAddition (string), swDownloadSourceBlocklistRemoval (string), swAppUpdatePopupType (string), swAppUpdateWisdomPopupEnabled (bool), swAppUpdateNativePopupType (string), swAppUpdateCustomPopupText (string), swAppUpdateCustomPopupTitle (string), swAppUpdateCustomPopupButtonText (string)
+- No internet: swNoInternetMinimumLevelEnforcement (int), swNoInternetMinimumSecondEnforcement (int), swNoInternetLoadingGameOfflineCountdown (int, -1 = disabled), swNoInternetDuringGameplayOfflineCountdown (int, -1 = disabled), swNoInternetBetweenLevelsOfflineCountdown (int, -1 = disabled), swNoInternetPopupText (string), swNoInternetIsNoAdsDisableNoInternetFlow (bool)
+- Privacy, consent & CMP: swGdprCmpFlowEnabled (bool), swGdprConsentBeforeAtt (bool), swCcpaPopupSettingsTitle (string), swCcpaPopupSettingsSubtitle (string), swCcpaPopupSettingsBody (string), swCcpaPopupSettingsBodyFontSize (int), swCmpVerboseTracking (bool), swCmpGoogleAdsTestDeviceIds (string), swCmpDebugGeography (string), swCmpResetConsentInformation (bool), swCmpCap (int), enableAgeVerification (bool)
+- Rate us: swRateUsPopup (bool), swRateUsTimerCooldown (int), swRateUsPopupTesting (bool)
+- Notifications: swLocalNotifications (string, JSON), swIosUninstallMeasurementRequired (bool)
+- Third-party reporting & AppsFlyer: swThirdPartyLevelAchievedReportingCap (int), swThirdPartyLevelAchievedInterval (int), appsFlyerDomain (string), swAppsFlyerTotalNettoPlayTime (string), swAppsFlyerTotalBruttoPlayTime (string), swAppsFlyerTotalGameplayReportingCap (string)
+- Conversion value & SKAN: cvModel (string), cvModelNumberAddition (int), cvModelProgressionLevel (int), swSkanScheme (string)
+- IAP: enableNoAdsApproval (bool), afIosValidationEnabled (bool), afIosValidationExcludedProductIds (string), swIapInitRetry (int), swAFBasicReceiptValidationEnabled (bool), swIsROI360IapEnabled (bool), enableAppStoreProductPreload (bool)
+- Cross-promo: swCrossPromoAutoOpenInstalledGame (bool)
+- Game blocker & DNS: availabilityMessage (string), swAdProtectionEnabled (bool), swAdProtectionVerbose (bool), swIronSourceMediationDomain (string)
+- Core & init: swInitTimeoutTimeInSeconds (float), swShouldReportConfigIterationEvent (bool)
+- Game session & alive: swGameSessionEndInterval (float), swAliveEventIntervals (int, -1 = disabled)
+- FPS & analytics: swFpsMeasurementIntervals (int), swFpsCriticalThreshold (int), swFpsShouldReportInvalidFps (bool)
+- SwSettings: enableDebug (bool), debugAdMediationPartner (bool), testBlockingApiInvocation (bool), enableTestAds (bool), enableDevtools (bool), logViaNetwork (bool)
+
+Important Notes:
+- Timer format: Many ad timers use strings like "20" (single value in seconds) or "1:90,6:60,11:50" (level:seconds or minute:seconds).
+- -1 often means "disabled" or "no limit" for numeric flags.
+- Config source priority: Deep Link > A/B > UGS Remote > Wisdom Remote > Local.
+
 Rules:
 1) Output MUST be valid JSON only. No markdown, no explanations.
-2) Output MUST include exactly one top-level key: either "addHoleConfig" or "boxesSaleConfig".
-3) Determine which feature based on keywords:
-   - "hole", "extra hole", "add hole" => use "addHoleConfig"
-   - "box", "boxes", "sale", "boxes sale" => use "boxesSaleConfig"
-   - If unclear, default to "addHoleConfig" and set "needsClarification": true
+2) FIRST, check if the user's request matches Wisdom SDK feature flags from the context above. Look for keywords like: "interstitial", "ads", "ad", "banner", "rate us", "notifications", "iap", "privacy", "cloud save", "cooldown", "timer", "level", "session", "revenue", "notifier", "popup", "update", "internet", "gdpr", "cmp", "appsFlyer", "skan", "cross-promo", "fps", "debug", etc.
+   - If user mentions ANY Wisdom SDK feature keywords => generate a JSON object with the appropriate Wisdom SDK config keys and values (see rule 3 below)
+   - If user mentions "hole", "extra hole", "add hole" => use "addHoleConfig" (see rule 4 below)
+   - If user mentions "box", "boxes", "sale", "boxes sale" => use "boxesSaleConfig" (see rule 5 below)
+   - If unclear or doesn't match any category, check Wisdom SDK context first, then default to "addHoleConfig" with "needsClarification": true
+3) For Wisdom SDK configs (when user mentions Wisdom SDK features), output a JSON object where:
+   - Top-level keys are the Wisdom SDK feature flag names (e.g., "swAdsLevelBasedMinLevel", "swBannerXEnabled", etc.)
+   - Values match the types specified in the context (int, bool, string, float)
+   - Only include keys that the user explicitly mentioned or that are logically required based on their request
 4) For addHoleConfig:
    - Determine "enabled": enable/turn on/activate/show/available => true, disable/turn off/not available/remove => false
    - Determine "boosterPrice": use mentioned price, or defaults (enabled=false => 65, enabled=true => 160)
@@ -2321,12 +2459,15 @@ Rules:
 
 IMPORTANT NOTES:
 - Current date: ${new Date().toISOString().split('T')[0]} (use this when user says "today", "starting today", "from today")
-- cooldown: The value in the schema is in MINUTES. User input may be in minutes or hours, so convert accordingly. Examples: "1 hour" = 60 minutes, "75 minutes" = 75 minutes, "60 minutes" = 60 minutes. Do NOT convert to seconds.
-- enableLevel: This represents the minimum level from which the feature is available. If user says "from level 6" or "level 6 and above", the value should be 6. If user says "level 4", use 4.
+- cooldown (for boxesSaleConfig): The value in the schema is in MINUTES. User input may be in minutes or hours, so convert accordingly. Examples: "1 hour" = 60 minutes, "75 minutes" = 75 minutes, "60 minutes" = 60 minutes. Do NOT convert to seconds.
+- enableLevel (for boxesSaleConfig): This represents the minimum level from which the feature is available. If user says "from level 6" or "level 6 and above", the value should be 6. If user says "level 4", use 4.
+- For Wisdom SDK configs: Use the exact key names from the context above. Pay attention to types: int, bool, string, float. For timers, use string format like "20" or "1:90,6:60,11:50". For -1 values, it often means "disabled" or "no limit".
 
 Input (free text): ${requirement}
 
-Output format: Return ONLY a JSON object with exactly one top-level key (either "addHoleConfig" or "boxesSaleConfig") and its value object.`;
+Output format: 
+- If user requests "hole" or "boxes sale" feature: Return ONLY a JSON object with exactly one top-level key (either "addHoleConfig" or "boxesSaleConfig") and its value object.
+- If user requests any Wisdom SDK feature: Return a JSON object with the appropriate Wisdom SDK feature flag keys and values based on the context above.`;
 
       // Use gemini-2.5-flash for faster responses
       const modelName = 'gemini-2.5-flash';
@@ -2392,13 +2533,25 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
           configKey = 'boxesSaleConfig';
           configValue = parsed.boxesSaleConfig;
         } else {
-          // Fallback: return the whole object
-          console.warn('UGS Validator: No recognized config key found, returning full object');
-          return {
-            key: null,
-            value: JSON.stringify(parsed, null, 2),
-            full: JSON.stringify(parsed, null, 2)
-          };
+          // Fallback: extract the first key from the JSON object
+          const keys = Object.keys(parsed);
+          if (keys.length > 0) {
+            const firstKey = keys[0];
+            console.warn('UGS Validator: No recognized config key found, using first key:', firstKey);
+            return {
+              key: firstKey,
+              value: JSON.stringify(parsed[firstKey], null, 2),
+              full: JSON.stringify(parsed, null, 2)
+            };
+          } else {
+            // Empty object - return as is
+            console.warn('UGS Validator: Empty JSON object');
+            return {
+              key: null,
+              value: JSON.stringify(parsed, null, 2),
+              full: JSON.stringify(parsed, null, 2)
+            };
+          }
         }
         
         console.log('UGS Validator: Extracted key:', configKey, 'value:', configValue);
@@ -2479,8 +2632,23 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
               contentConfigKey.value = result.key;
               console.log('UGS Validator: Set config key to:', result.key);
             } else {
-              console.warn('UGS Validator: No config key in result', result);
-              contentConfigKey.value = '';
+              // If no key in result, try to extract first key from the JSON
+              console.warn('UGS Validator: No config key in result, attempting to extract from JSON');
+              let extractedKey = null;
+              try {
+                const jsonValue = (result && result.full) ? result.full : (result && result.value ? result.value : '');
+                if (jsonValue) {
+                  const parsed = JSON.parse(jsonValue);
+                  const keys = Object.keys(parsed);
+                  if (keys.length > 0) {
+                    extractedKey = keys[0];
+                    console.log('UGS Validator: Extracted first key from JSON:', extractedKey);
+                  }
+                }
+              } catch (e) {
+                console.error('UGS Validator: Error extracting key from JSON:', e);
+              }
+              contentConfigKey.value = extractedKey || '';
             }
           } else {
             console.error('UGS Validator: contentConfigKey element not found');
@@ -2492,6 +2660,9 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
             contentAiOutput.value = valueToSet;
             contentAiOutput.style.height = 'auto';
             contentAiOutput.style.height = Math.min(contentAiOutput.scrollHeight, 300) + 'px';
+            // Update copy button and refresh button visibility
+            updateCopyButtonVisibility();
+            updateRefreshButtonVisibility();
             console.log('UGS Validator: Set config value, length:', valueToSet.length, 'preview:', valueToSet.substring(0, 100));
           } else {
             console.error('UGS Validator: contentAiOutput element not found');
@@ -2554,6 +2725,7 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
               this.style.background = '#000000';
               this.style.color = 'white';
               this.style.borderColor = '#000000';
+              this.style.borderWidth = '1px';
               this.style.transform = 'translateY(-2px)';
               const icon = this.querySelector('#ugs-content-ai-star');
               if (icon) icon.style.filter = 'brightness(0) saturate(100%) invert(100%)'; // White icon on black background
@@ -2566,6 +2738,7 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
               this.style.background = '#ffffff';
               this.style.color = '#000000';
               this.style.borderColor = '#000000';
+              this.style.borderWidth = '1px';
               this.style.transform = 'translateY(0)';
               const icon = this.querySelector('#ugs-content-ai-star');
               if (icon) icon.style.filter = 'brightness(0) saturate(100%)'; // Black icon on white background
@@ -2582,8 +2755,14 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
       contentAiOutput.addEventListener('input', () => {
         contentAiOutput.style.height = 'auto';
         contentAiOutput.style.height = Math.min(contentAiOutput.scrollHeight, 300) + 'px';
+        updateCopyButtonVisibility();
+        updateRefreshButtonVisibility();
       });
     }
+    
+    // Initially hide all copy buttons and refresh button
+    updateCopyButtonVisibility();
+    updateRefreshButtonVisibility();
     
     // Content tab: Inject button
     if (contentInjectBtn && contentAiOutput && contentConfigKey) {
@@ -2648,6 +2827,7 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
           chrome.storage.local.set({ geminiApiKey: apiKey, ugs_gemini_api_key: apiKey });
         }
         updateContentAIButtonState();
+        updateCopyButtonVisibility();
       });
       
       contentGeminiApiKeyInput.addEventListener('blur', () => {
@@ -2663,19 +2843,58 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
     if (contentReq) {
       contentReq.addEventListener('input', () => {
         updateContentAIButtonState();
+        updateCopyButtonVisibility();
       });
     }
     
     // Initial state update for Content tab AI button
     updateContentAIButtonState();
     
+    // Content tab: Refresh button to clear all fields
+    const contentRefreshBtn = sidePanel.querySelector('#ugs-content-refresh-btn');
+    if (contentRefreshBtn) {
+      // Initially hide refresh button (will show when AI output exists)
+      contentRefreshBtn.style.display = 'none';
+      
+      contentRefreshBtn.addEventListener('click', () => {
+        // Clear all Content tab fields
+        if (contentReq) contentReq.value = '';
+        if (contentAiOutput) contentAiOutput.value = '';
+        if (contentConfigKey) contentConfigKey.value = '';
+        if (contentConvertResult) {
+          contentConvertResult.style.display = 'none';
+          contentConvertResult.textContent = '';
+        }
+        if (contentAiOutputContainer) {
+          contentAiOutputContainer.style.display = 'none';
+        }
+        // Update button states and visibility
+        updateContentAIButtonState();
+        updateCopyButtonVisibility();
+        updateRefreshButtonVisibility();
+        // Reset textarea heights
+        if (contentReq) {
+          contentReq.style.height = 'auto';
+        }
+        if (contentAiOutput) {
+          contentAiOutput.style.height = 'auto';
+        }
+      });
+    }
+    
     // Content tab: Auto-resize AI output textarea
     if (contentAiOutput) {
       contentAiOutput.addEventListener('input', () => {
         contentAiOutput.style.height = 'auto';
         contentAiOutput.style.height = Math.min(contentAiOutput.scrollHeight, 300) + 'px';
+        updateCopyButtonVisibility();
+        updateRefreshButtonVisibility();
       });
     }
+    
+    // Initially hide all copy buttons and refresh button
+    updateCopyButtonVisibility();
+    updateRefreshButtonVisibility();
     
     // Content tab: Inject button
     contentInjectBtn.addEventListener('click', () => {
@@ -3212,7 +3431,7 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
       window.ugsTabCheckStart();
     }
     
-    // Detect which tab to show immediately based on H2 "Content" element
+    // Detect which tab to show immediately based on H2 "Content" or "Targeting" element
     setTimeout(() => {
       const targetingTab = sidePanel.querySelector('#ugs-tab-targeting');
       const contentTab = sidePanel.querySelector('#ugs-tab-content');
@@ -3220,17 +3439,25 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
       const contentContent = sidePanel.querySelector('#ugs-tab-content-content');
       
       if (targetingTab && contentTab && targetingContent && contentContent) {
-        // Look for the H2 element with text "Content"
-        const contentH2 = Array.from(document.querySelectorAll('h2.MuiTypography-h2, h2')).find(h2 => {
+        // Look for the H2 element with text "Content" or "Targeting"
+        const allH2 = Array.from(document.querySelectorAll('h2.MuiTypography-h2, h2'));
+        const contentH2 = allH2.find(h2 => {
           const text = h2.textContent.trim();
           return text === 'Content';
+        });
+        const targetingH2 = allH2.find(h2 => {
+          const text = h2.textContent.trim();
+          return text === 'Targeting';
         });
         
         const contentDiv = document.querySelector('div[data-testid="stepper-title"] h2');
         const isContentView = contentH2 !== undefined || 
                             (contentDiv && contentDiv.textContent.trim() === 'Content');
+        const isTargetingView = targetingH2 !== undefined || 
+                              (contentDiv && contentDiv.textContent.trim() === 'Targeting');
         
         if (isContentView) {
+          // Switch to Content tab if Content header is detected
           contentTab.style.borderBottomColor = '#FF4E21';
           contentTab.style.color = '#FF4E21';
           contentTab.style.fontWeight = '600';
@@ -3239,16 +3466,18 @@ Output format: Return ONLY a JSON object with exactly one top-level key (either 
           targetingTab.style.fontWeight = '500';
           contentContent.style.display = 'block';
           targetingContent.style.display = 'none';
-        } else {
+        } else if (isTargetingView) {
+          // Switch to Targeting tab if Targeting header is detected
           targetingTab.style.borderBottomColor = '#FF4E21';
           targetingTab.style.color = '#FF4E21';
-          targetingTab.style.fontWeight = '600';
+          targetingTab.style.fontWeight = '500';
           contentTab.style.borderBottomColor = 'transparent';
           contentTab.style.color = '#6b7280';
-          contentTab.style.fontWeight = '500';
+          contentTab.style.fontWeight = '400';
           targetingContent.style.display = 'block';
           contentContent.style.display = 'none';
         }
+        // If neither is detected, let the user keep their current tab selection
       }
     }, 100);
   }

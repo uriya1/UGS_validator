@@ -1,5 +1,9 @@
-const COLOR_PATH = "assets/logo.png";
-const GRAY_PATH  = "assets/logo-gray.png";
+const COLOR_PATH = "assets/ai_icon128.png";
+const GRAY_PATH  = "assets/ai_icon_gray128.png";
+
+fetch(chrome.runtime.getURL(GRAY_PATH))
+  .then(r => console.log(GRAY_PATH, "status:", r.status, "ok:", r.ok, "url:", r.url))
+  .catch(e => console.error("fetch failed for", GRAY_PATH, e));
 
 async function pathToImageData(path, size = 32) {
   const url = chrome.runtime.getURL(path);

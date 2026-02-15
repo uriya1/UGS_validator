@@ -50,6 +50,8 @@
           "content-scripts/panel.js",
           "assets/logo.png",
           "assets/logo-gray.png",
+          "assets/ai_icon128.png",
+          "assets/ai_icon_gray128.png",
           "assets/ai_icon.svg"
         ],
         "matches": [
@@ -70,18 +72,18 @@
     "action": {
       "default_title": "UGS Validator - Click to open validation panel",
       "default_icon": {
-        "16": "assets/logo-gray.png",
-        "32": "assets/logo-gray.png",
-        "48": "assets/logo-gray.png",
-        "128": "assets/logo-gray.png"
+        "16": "assets/ai_icon_gray128.png",
+        "32": "assets/ai_icon_gray128.png",
+        "48": "assets/ai_icon_gray128.png",
+        "128": "assets/ai_icon_gray128.png"
       }
     },
-  
+
     "icons": {
-      "16": "assets/logo.png",
-      "32": "assets/logo.png",
-      "48": "assets/logo.png",
-      "128": "assets/logo.png"
+      "16": "assets/ai_icon128.png",
+      "32": "assets/ai_icon128.png",
+      "48": "assets/ai_icon128.png",
+      "128": "assets/ai_icon128.png"
     }
   }
   
