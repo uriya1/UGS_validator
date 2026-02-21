@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#9ca3af"/>
+  <!-- Calendar icon -->
+  <rect x="28" y="36" width="72" height="64" rx="8" fill="white" opacity="0.6"/>
+  <rect x="28" y="36" width="72" height="20" rx="8" fill="white" opacity="0.3"/>
+  <rect x="28" y="36" width="72" height="20" rx="8" fill="#6b7280" opacity="0.5"/>
+  <rect x="44" y="28" width="6" height="16" rx="3" fill="white" opacity="0.6"/>
+  <rect x="78" y="28" width="6" height="16" rx="3" fill="white" opacity="0.6"/>
+  <!-- Check mark -->
+  <path d="M48 72 L58 82 L80 60" stroke="#9ca3af" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,36 @@
+/* Clalit Appointment Finder – Content script styles */
+
+#clalit-finder-toggle {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Notification badge on toggle button */
+#clalit-finder-toggle .badge {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 16px;
+  height: 16px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  border: 2px solid white;
+  animation: clalit-badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes clalit-badge-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Pulse on the toggle button when monitoring is active */
+#clalit-finder-toggle.monitoring::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  background: #0ea5e9;
+  border-radius: 50%;
+  border: 2px solid white;
+}
